@@ -1,4 +1,3 @@
-mod candidate_f64;
 mod candidate_f64_pair;
 
 use candidate_f64_pair::{CandidateF64Pair, ParamsF64Pair};

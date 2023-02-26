@@ -4,5 +4,5 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-nsga = "0.1"
+nsga = "0.1.2"
 rand = "0.8"

@@ -27,9 +27,9 @@ checksum = "201de327520df007757c1f0adce6e827fe8562fbc28bfd9c15571c66ca1f5f79"
 
 [[package]]
 name = "nsga"
-version = "0.1.1"
+version = "0.1.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "5a972273290f754fe6c3713d31261c209f95dee88a4c868c8d250e292f6d2eb3"
+checksum = "009d63903333449456a219bd55a0d61e09bb11abefedaf30d7e7812480b3334d"
 dependencies = [
  "peeking_take_while",
  "rand",
@@ -45,9 +45,9 @@ dependencies = [
 
 [[package]]
 name = "peeking_take_while"
-version = "0.1.2"
+version = "1.0.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "19b17cddbe7ec3f8bc800887bab5e717348c95ea2ca0b1bf0837fb964dc67099"
+checksum = "9e9ed2178b0575fff8e1b83b58ba6f75e727aafac2e1b6c795169ad3b17eb518"
 
 [[package]]
 name = "ppv-lite86"

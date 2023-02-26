@@ -1,5 +1,4 @@
-use crate::candidate_f64::CandidateF64;
-use nsga::{Constraint, Meta, Objective, Ratio, Solution};
+use nsga::{CandidateF64, Constraint, Meta, Objective, Ratio, Solution};
 use rand::{thread_rng, Rng};
 use std::ops::RangeInclusive;
 
@@ -47,12 +46,14 @@ impl<'a> Meta<'a, CandidateF64Pair> for ParamsF64Pair<'a> {
     fn random_solution(&mut self) -> CandidateF64Pair {
         let x = CandidateF64 {
             val: thread_rng().gen_range(self.val_range_x.clone()),
-            range: self.val_range_x.clone(),
+            range_start: *self.val_range_x.start(),
+            range_end: *self.val_range_x.end(),
         };
 
         let y = CandidateF64 {
             val: thread_rng().gen_range(self.val_range_y.clone()),
-            range: self.val_range_y.clone(),
+            range_start: *self.val_range_x.start(),
+            range_end: *self.val_range_x.end(),
         };
 
         CandidateF64Pair { x, y }
